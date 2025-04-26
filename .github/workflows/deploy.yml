@@ -1,0 +1,65 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main] # Update this to match your branch name
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Explore repository structure
+        run: |
+          echo "Repository root contents:"
+          ls -la
+          
+          if [ -d "dsa-portfolio" ]; then
+            echo "dsa-portfolio directory found, exploring contents:"
+            ls -la dsa-portfolio
+            
+            if [ -f "dsa-portfolio/package.json" ]; then
+              echo "Found package.json in dsa-portfolio directory"
+              PROJECT_DIR="dsa-portfolio"
+            fi
+          fi
+          
+          if [ -f "package.json" ]; then
+            echo "Found package.json at repository root"
+            PROJECT_DIR="."
+          fi
+          
+          if [ -z "$PROJECT_DIR" ]; then
+            echo "Could not locate package.json. Exploring more folders..."
+            find . -name "package.json" -type f | head -n 1
+            exit 1
+          fi
+          
+          echo "PROJECT_DIR=$PROJECT_DIR" >> $GITHUB_ENV
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          cache: 'npm'
+          cache-dependency-path: ${{ env.PROJECT_DIR }}/package-lock.json
+
+      - name: Install dependencies
+        run: |
+          cd ${{ env.PROJECT_DIR }}
+          npm ci
+
+      - name: Build
+        run: |
+          cd ${{ env.PROJECT_DIR }}
+          npm run build
+        env:
+          NODE_ENV: production
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: ${{ env.PROJECT_DIR }}/out
+          branch: gh-pages 
