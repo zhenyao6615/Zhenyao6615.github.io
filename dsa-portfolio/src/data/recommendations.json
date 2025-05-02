@@ -1,9 +1,9 @@
 [
-    {
-      "id": "1",
-      "name": "Mr. Chung",
-      "role": "Coding Teacher",
-      "content": "TBD",
-      "image": "/images/recommendations/science-teacher.jpg"
-    }
-  ]
+  {
+    "id": "1",
+    "name": "Mr. Samuel Chung",
+    "role": "Coding Instructor",
+    "content": "I have had the pleasure of guiding this student in Scratch programming. He consistently demonstrates boundless curiosity and creativity, eagerly exploring new ideas and experimenting with game mechanics. His projects showcase thoughtful problem-solving and engaging design. His enthusiasm and collaborative spirit make him an outstanding young programmer. I wholeheartedly recommend him for future coding endeavors.",
+    "image": "/images/plc.png"
+  }
+]

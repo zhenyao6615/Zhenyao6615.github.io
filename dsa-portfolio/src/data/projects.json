@@ -1,47 +1,34 @@
 [
-    {
-      "id": "1",
-      "title": "Balloon-Powered Car",
-      "description": "I designed and built a car that moves using the air from a balloon. I did lots of tests with different balloon sizes and car designs to find the one that goes the furthest!",
-      "image": "/images/projects/balloon-car.jpg",
-      "demoLink": "https://example.com/balloon-car-demo",
-      "tags": ["Physics", "Engineering", "Design"]
-    },
-    {
-      "id": "2",
-      "title": "Plant Growth Experiment",
-      "description": "I set up an experiment to see how different types of water affect plant growth. I used tap water, filtered water, and rainwater to water identical bean plants for three weeks.",
-      "image": "/images/projects/plant-experiment.jpg",
-      "tags": ["Biology", "Environmental Science"]
-    },
-    {
-      "id": "3",
-      "title": "Simple Weather Station",
-      "description": "Using a microcontroller and some sensors, I built a small weather station that measures temperature, humidity, and air pressure. The data is displayed on a small screen!",
-      "image": "/images/projects/weather-station.jpg",
-      "demoLink": "https://example.com/weather-station-data",
-      "tags": ["Electronics", "Coding", "Meteorology"]
-    },
-    {
-      "id": "4",
-      "title": "Solar System Model",
-      "description": "I created a to-scale model of our solar system showing the relative sizes of the planets and their distances from the sun. I used different materials to show each planet's features.",
-      "image": "/images/projects/solar-system.jpg",
-      "tags": ["Astronomy", "Art", "Scale Modeling"]
-    },
-    {
-      "id": "5",
-      "title": "Math Puzzle Game",
-      "description": "I designed a fun math puzzle game that challenges players to solve problems using addition, subtraction, multiplication, and division. I tested it with my classmates!",
-      "image": "/images/projects/math-game.jpg",
-      "demoLink": "https://example.com/math-game-play",
-      "tags": ["Mathematics", "Game Design", "Coding"]
-    },
-    {
-      "id": "6",
-      "title": "Recycled Materials Robot",
-      "description": "Using only recycled materials from home, I built a robot model that can move its arms when you turn a handle. It shows how mechanical systems can work with simple materials.",
-      "image": "/images/projects/recycled-robot.jpg",
-      "tags": ["Recycling", "Mechanics", "Creativity"]
-    }
-  ]
+  {
+    "id": "1",
+    "title": "Lemonoid",
+    "description": "A bullet hell Scratch game where players control a spaceship to blast meteorites in the shape of lemons.",
+    "image": "/images/lemon.png",
+    "demoLink": "https://scratch.mit.edu/projects/1114913346/",
+    "tags": ["Scratch"]
+  },
+  {
+    "id": "2",
+    "title": "Pong",
+    "description": "A recreation of the classic Pong game implemented in Scratch, where one or two players control paddles to bounce a ball back and forth and score points by getting the ball past the opponent's paddle.",
+    "image": "/images/pong.png",
+    "demoLink": "https://scratch.mit.edu/projects/1097427136/",
+    "tags": ["Scratch"]
+  },
+  {
+    "id": "3",
+    "title": "Rock Paper Scissors",
+    "description": "The classic Rock Paper Scissors game implemented in Scratch, using sprite costumes for choices and random number blocks to simulate the computer's move.",
+    "image": "/images/rps.png",
+    "demoLink": "https://scratch.mit.edu/projects/1104153177/",
+    "tags": ["Scratch"]
+  },
+  {
+    "id": "4",
+    "title": "My Platformer",
+    "description": "A generic Scratch platformer where players control a purple character to explore levels, jump across platforms, and collect items for points.",
+    "image": "/images/MyPlatformer.png",
+    "demoLink": "https://scratch.mit.edu/projects/1154418307/",
+    "tags": ["Scratch"]
+  }
+]
